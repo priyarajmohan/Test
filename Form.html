@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forms</title>
+</head>
+<body>
+<h1>Forms</h1>
+<form>
+	<fieldset>
+	<!--Name-->
+	<label>Name:</label>
+	<input type="name" name="text" maxlength="25" placeholder="firstname" required><br>
+    <br>
+    <!--Email-->
+	<label>Email:</label>
+	<input type="Email" name="text" value="test@example.com"  autofocus required><br>
+    <br>
+    <!--Password-->
+	<label>Password:</label>
+	<input type="Password"  pattern=".{6,}" title="six or more characters" required><br>
+    <br>
+    </fieldset>
+
+	<!--dropdown-->
+	<label>category:</label>
+	
+		<select required>
+			
+			<option value="employee">employee</option>
+			<option value="student">student</option>
+			<option value="freelancer" selected="" > freelancer</option>
+
+		</select>
+	
+	<br><br>
+
+    <!--date-->
+	 <label>Event date:</label>
+	 <input type="date" name="event date" required>
+	
+	<br>
+	<br>
+
+	<!--radio button-->
+
+	<label>Tickets:</label>
+	<br>
+	<input type="radio" name ="Tickets" value="tickets 2"  checked required>tickets 2 <br>
+	<input type="radio" name ="Tickets" value="tickets 1" required>tickets 1  <br>
+	<input type="radio" name ="Tickets" value="tickets 3" required>tickets 3  <br>	
+
+
+<br>
+<br>
+
+<!--check box-->
+<label>online payment:</label>
+<input type="checkbox" name="online payment" value="online" required><br>
+<br>
+<br>
+
+<!--text area-->
+<label>Notes:</label>
+<textarea rows="4" cols="50" placeholder="Notes:">
+</textarea>
+<br>
+<br>
+
+
+
+<input type="submit" name="submit" value="submit">
+
+<input type="reset" value="reset">
+
+
+
+
+</form>
+</body>
+</html>
